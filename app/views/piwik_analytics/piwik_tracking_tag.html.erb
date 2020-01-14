@@ -1,10 +1,10 @@
 <!-- Piwik -->
 <script type="text/javascript">
   var pkBaseURL = (("https:" == document.location.protocol) ? "https" : "http") + "://<%= url %>/";
-  document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+  document.write(unescape("%3Cscript src='" + pkBaseURL + "matomo.js' type='text/javascript'%3E%3C/script%3E"));
   </script><script type="text/javascript">
   try {
-    var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", <%= id_site %>);
+    var piwikTracker = Piwik.getTracker(pkBaseURL + "matomo.php", <%= id_site %>);
     piwikTracker.trackPageView();
     piwikTracker.enableLinkTracking();
   } catch( err ) {}
@@ -12,6 +12,6 @@
 <!-- End Piwik Tag -->
 <!-- Piwik Image Tracker -->
 <noscript>
-  <p><img src="//<%= url %>/piwik.php?idsite=<%= id_site %>&amp;rec=1" style="border:0" alt="" /></p>
+  <p><img src="//<%= url %>/matomo.php?idsite=<%= id_site %>&amp;rec=1" style="border:0" alt="" /></p>
 </noscript>
 <!-- End Piwik -->
